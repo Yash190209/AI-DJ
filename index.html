@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AI MUSiC WEB APP</title>
+	<title>AI DJ WEB APP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,10 +15,30 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body background="BG.jpg">
-    <h1 class="btn btn-warning heading">Music Web App
-<h3 class="btn btn-warning note">Note-Get our left hand in front ot play Peter Pan song and Right hand in front to play Harry Potter Theme Song</h3>
-</h1>
-<h4 class="btn btn-danger heading">Song Name</h4>
-<div class="copy_right_footer">Developed By- Yash Mudgal</div>
+<body background="background.jpg">
+<center>
+  	<h3 class="btn btn-warning heading">AI DJ WEB APP
+	    <br>
+	    <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
+        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
+	<br><br>
+  <div class="div_speed">
+    <img src="disk.gif" class="div_speed_img">
+    <br>
+    <h3 class="btn btn-danger" id="speed">Speed</h3>
+  </div>
+  <div class="div_volume">
+    <img src="disk.gif" class="div_vol_img">
+    <br>
+    <h3 class="btn btn-danger" id="vol">Volume</h3>
+  </div>
+  <br>
+  <br>
+  <button onclick="play();"class="btn btn-success play_button">Play</button>
+</center>
+
+
+<script src="main.js"></script>
 </body>
+</html>
